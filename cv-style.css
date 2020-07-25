@@ -1,5 +1,10 @@
+
+
+
 .head-left {
-    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .card {
@@ -53,6 +58,13 @@ ul.timeline > li:before {
 
 .imgskill {
     width: 100%;
+    margin-bottom: 10px;
+}
+
+.point {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
     margin-bottom: 10px;
 }
 
