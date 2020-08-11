@@ -1,0 +1,45 @@
+.navbar-toggler-icon-custom {
+    width: 1em;
+    height: 1em;
+}
+
+.icon-sos {
+    font-size: 20px;
+    padding: 7px;
+}
+
+.logo-ft {
+    width: 75%;
+}
+
+.icon-media i {
+    font-size: 20px;
+    padding: 10px;
+}
+
+@media only screen and (min-width: 769px) {
+    .menu-large {
+        display: flex;
+    }
+    .menu-small {
+        display: none;
+    }
+    .sos {
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .menu-large {
+        display: none;
+    }
+    .menu-small {
+        display: flex;
+    }
+    .sos {
+        display: none;
+    }
+}
+
+
+

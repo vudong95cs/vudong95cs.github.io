@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SẢN PHẨM</title>
+    <link rel="icon" type="image/png" href="img/icon-title.png"> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet"  type="text/css" href="style.css">
+</head>
+<body> 
+<!-- Header -->
+<header class="container-fluid bg-light">
+    <div class="container">
+        <div class="row">
+            <!-- header-left -->
+            <div class="col-md-6 col-lg-6 col-xl-6">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <small><a class="nav-link text-secondary" href="#"><i class="fas fa-envelope mr-1"></i>info@homeplatform.vn</a></small>
+                    </li>
+                    <li class="nav-item">
+                        <small><a class="nav-link text-secondary" href="#"><i class="fas fa-download mr-1"></i>Download</a></small>
+                    </li>
+                </ul>
+            </div>
+            <!-- header-left -->
+            <!-- header-right -->
+            <div class="col-md-6 col-lg-6 col-xl-6">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a href="https://www.facebook.com/homeplatform4/?ref=bookmarks" class="nav-link"><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.youtube.com/" class="nav-link text-danger"><i class="fab fa-youtube"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.ebay.com/" class="nav-link text-success"><i class="fab fa-ebay"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.amazon.com/ref=nav_logo" class="nav-link text-dark"><i class="fab fa-amazon"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown"><small>VN</small></button>
+                            <div class="dropdown-menu">
+                                <small><a class="dropdown-item" href="#">EN</a></small>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn" data-toggle="modal" data-target="#modal-login"><small><i class="fas fa-user"></i> Đăng nhập</small></button>
+                        <div class="modal fade" id="modal-login">
+                            <div class="modal-dialog modal-md">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Đăng nhập</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="/action_page.php">
+                                            <div class="form-group">
+                                                <label for="account">Tài khoản:</label>
+                                                <input type="text" class="form-control" id="email" placeholder="Nhập tài khoản" name="account">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="pw">Mật khẩu:</label>
+                                                <input type="password" class="form-control" id="pw" placeholder="Nhập mật khẩu" name="pw">
+                                            </div>
+                                            <div class="form-group form-check">
+                                                <label class="form-check-label">
+                                                    <input class="form-check-input" type="checkbox" name="remember"> Ghi nhớ email và mật khẩu
+                                                </label>
+                                            </div>
+                                        </form>
+                                        <p class="text-center">hoặc</p>
+                                        <a href="#" type="button" class="btn btn-primary btn-block">Đăng nhập với Facebook</a>
+                                        <a href="#" type="button" class="btn btn-danger btn-block">Đăng nhập với Gmail</a>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#">Quên mật khẩu</a>
+                                        <a href="register.html" type="button" class="btn btn-primary">Đăng ký</a>
+                                        <button type="submit" class="btn btn-primary">Đăng nhập</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- header-right -->
+        </div>
+    </div>
+</header>
+<!-- Header -->
+<!-- menu -->
+<div class="bg-white sticky-top">
+    <!-- menu-top -->
+    <div class="container">
+        <div class="row">
+            <!-- logo -->
+            <div class="col-md-3 col-lg-3 col-xl-3 d-flex align-items-center">
+                <a href="index.html"><img class="img-fluid" src="img/logo.png" alt="logo"></a>
+            </div>
+            <!-- logo -->
+            <!-- menu-hoz -->
+            <div class="col-md-6 col-lg-6 col-xl-6">
+                <ul class="nav justify-content-center menu-large">
+                    <li class="nav-item">
+                        <a href="products.html" class="nav-link text-dark font-weight-bold">SẢN PHẨM</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="solutions.html" class="nav-link text-dark font-weight-bold">GIẢI PHÁP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="news.html" class="nav-link text-dark font-weight-bold">TIN TỨC</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link text-dark font-weight-bold">LIÊN HỆ</a>
+                    </li>
+                </ul>
+                <ul class="nav menu-small">
+                    <li class="nav-item flex-fill text-center">
+                        <a href="products.html" class="nav-link text-dark"><i class="fab fa-buromobelexperte"></i></a>
+                    </li>
+                    <li class="nav-item flex-fill text-center">
+                        <a href="solutions.html " class="nav-link text-dark"><i class="fas fa-sitemap"></i></a>
+                    </li>
+                    <li class="nav-item flex-fill text-center">
+                        <a href="news.html" class="nav-link text-dark"><i class="fas fa-stream"></i></a>
+                    </li>
+                    <li class="nav-item flex-fill text-center">
+                        <a href="contact.html" class="nav-link text-dark"><i class="far fa-address-card"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- menu-hoz -->
+            <!-- cart -->
+            <div class="col-md-3 col-lg-3 col-xl-3">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link"><i class="fas fa-heart"></i><span class="badge badge-pill badge-success">4</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="popover-cart btn" data-toggle="popover" data-placement="bottom" title="Giỏ hàng" data-trigger="focus" data-html="true" data-popover-content="#button-cart">
+                            <i class="fas fa-shopping-cart"></i><span class="badge badge-pill badge-success">3</span>
+                        </button>
+                        <div id="button-cart" style="display: none;">
+                            <div class="row d-flex align-items-center">
+                                <div class="col"><img class="img-fluid" src="img/product1.jpg"></div>
+                                <div class="col"><p>hub</p></div>
+                                <div class="col"><p>SL:1</p></div>
+                            </div><hr>
+                            <div class="row d-flex align-items-center">
+                                <div class="col"><img class="img-fluid" src="img/product2.jpg"></div>
+                                <div class="col"><p>Allon AIO</p></div>
+                                <div class="col"><p>SL:1</p></div>
+                            </div><hr>
+                            <div class="row d-flex align-items-center">
+                                <div class="col"><img class="img-fluid" src="img/product3.jpg"></div>
+                                <div class="col"><p>Mirror</p></div>
+                                <div class="col"><p>SL:1</p></div>
+                            </div>
+                            <a href="cart.html" class="btn btn-primary btn-block mt-3" role="button">Kiểm tra</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"><i class="fas fa-plus-square"></i> :750 $</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- cart -->
+        </div>
+    </div>
+    <!-- menu-top -->
+    <!-- menu-bottom -->
+    <div class="container">
+        <div class="row">
+            <!-- navbar -->
+            <div class="col-md-3 col-lg-3 col-xl-3 mb-1">
+                <nav class="navbar navbar-light">
+                    <a class="navbar-brand">Menu</a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapse-menu">
+                        <span class="navbar-toggler-icon navbar-toggler-icon-custom"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapse-menu">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link">Bộ điều khiển trung tâm</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">Chiếu sáng thông minh</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">Kiểm soát</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">Rèm thông minh</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">Hệ thống HVAC</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">Ổ cắm thông minh</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">Giải trí</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <!-- navbar -->
+            <!-- search -->
+            <div class="col-md-6 col-lg-6 col-xl-6 mb-1 d-flex align-items-center">
+                <div class="input-group">
+                    <input type="search" class="form-control" placeholder="Tìm kiếm ...">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="submit"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+            </div>
+            <!-- search -->
+            <!-- sos -->
+            <div class="col-md-3 col-lg-3 col-xl-3 mb-1 align-items-center justify-content-center sos">
+                <i class="fas fa-phone text-white bg-success rounded-circle mr-2 icon-sos"></i>
+                <h6 class="mb-0">+84 974 486 911</h6>
+                
+            </div>
+            <!-- sos -->
+        </div>
+    </div>
+    <!-- menu-bottom -->
+</div>
+<!-- menu -->
+<!-- content -->
+<div class="container">
+    <ul class="nav nav-tabs justify-content-center menu-large" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active text-dark" data-toggle="tab" href="#center">Interation Center</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-dark" data-toggle="tab" href="#lighting">Smart Lighting</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-dark" data-toggle="tab" href="#security">Home Security</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-dark" data-toggle="tab" href="#rt">Smart R+T</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-dark" data-toggle="tab" href="#hvac">Smart HVAC</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-dark" data-toggle="tab" href="#energy">Energy Management</a>
+        </li>
+    </ul>
+    <ul class="nav nav-tabs justify-content-center menu-small" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active text-dark" data-toggle="tab" href="#center"><i class="fas fa-microchip"></i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-dark" data-toggle="tab" href="#lighting"><i class="fas fa-lightbulb"></i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-dark" data-toggle="tab" href="#security"><i class="fas fa-shield-alt"></i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-dark" data-toggle="tab" href="#rt"><i class="fas fa-braille"></i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-dark" data-toggle="tab" href="#hvac"><i class="fas fa-snowflake"></i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-dark" data-toggle="tab" href="#energy"><i class="fas fa-charging-station"></i></a>
+        </li>
+    </ul>
+    <div class="tab-content mb-3">
+        <div class="tab-pane container active" id="center">
+            <div class="card-deck mt-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-7">
+                                <h5>MixPad S AIO Gateway Panel</h5>
+                                <p class="card-text">One panel all smart</p>
+                                <a href="product-4.html" type="button" class="btn btn-primary">Chi tiết</a>
+                            </div>
+                            <div class="col-5 d-flex align-items-center">
+                                <img class="img-fluid" src="img/product5.jpg" alt="pro5">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-7">
+                                <h5>MixPad Multifunctional Panel</h5>
+                                <p class="card-text">AIO panel to control smart devices and scenes with</p>
+                                <a href="#" type="button" class="btn btn-primary">Chi tiết</a>
+                            </div>
+                            <div class="col-5 d-flex align-items-center">
+                                <img class="img-fluid" src="img/product4.jpg" alt="pro4">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-deck mt-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-7">
+                                <h5>Zigbee Mini Hub</h5>
+                                <p class="card-text">Connect many of smart devices to creat smart scenes</p>
+                                <a href="#" type="button" class="btn btn-primary">Chi tiết</a>
+                            </div>
+                            <div class="col-5 d-flex align-items-center">
+                                <img class="img-fluid" src="img/product1.jpg" alt="pro1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-7">
+                                <h5>Allon Pro RF & IR Hub</h5>
+                                <p class="card-text">Smart linking bridge & hub for kinds of RF or IR devices</p>
+                                <a href="#" type="button" class="btn btn-primary">Chi tiết</a>
+                            </div>
+                            <div class="col-5 d-flex align-items-center">
+                                <img class="img-fluid" src="img/product2.jpg" alt="pro1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-deck mt-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-7">
+                                <h5>Smart Mirror</h5>
+                                <p class="card-text">Real-time display and control kinds of smart devices</p>
+                                <a href="#" type="button" class="btn btn-primary">Chi tiết</a>
+                            </div>
+                            <div class="col-5 d-flex align-items-center">
+                                <img class="img-fluid" src="img/product3.jpg" alt="pro3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-7">
+                                <h5>Magic Cube Wifi IR Controller</h5>
+                                <p class="card-text">Connect infrared home appliances by replacing all remote controller</p>
+                                <a href="#" type="button" class="btn btn-primary">Chi tiết</a>
+                            </div>
+                            <div class="col-5 d-flex align-items-center">
+                                <img class="img-fluid" src="img/product6.jpg" alt="pro6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="tab-pane container fade card-deck" id="lighting">
+            <div class="card-deck mt-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-7">
+                                <h5>Geekrav Zigbee Switch Series</h5>
+                                <p class="card-text">Carry leading-edge technology with sophisticated aesthetics</p>
+                                <a href="#" type="button" class="btn btn-primary">Chi tiết</a>
+                            </div>
+                            <div class="col-5 d-flex align-items-center">
+                                <img class="img-fluid" src="img/product13.jpg" alt="pro13">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-7">
+                                <h5>Touch Classic Zigbee Switch Series</h5>
+                                <p class="card-text">3ms response on tempered glass panel</p>
+                                <a href="#" type="button" class="btn btn-primary">Chi tiết</a>
+                            </div>
+                            <div class="col-5 d-flex align-items-center">
+                                <img class="img-fluid" src="img/product12.jpg" alt="pro12">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-deck mt-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-7">
+                                <h5>Aurora Zigbee Switch Series</h5>
+                                <p class="card-text">Elaborate & ultrathin glass touch panel with metal frame</p>
+                                <a href="#" type="button" class="btn btn-primary">Chi tiết</a>
+                            </div>
+                            <div class="col-5 d-flex align-items-center">
+                                <img class="img-fluid" src="img/product11.jpg" alt="pro1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-7">
+                                <h5>Platinum Zigbee Switch Series</h5>
+                                <p class="card-text">High response of capactive touch control technology</p>
+                                <a href="#" type="button" class="btn btn-primary">Chi tiết</a>
+                            </div>
+                            <div class="col-5 d-flex align-items-center">
+                                <img class="img-fluid" src="img/product10.jpg" alt="pro1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-deck mt-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-7">
+                                <h5>Zigbee RGB Relay</h5>
+                                <p class="card-text">Change the temperature and brightness of RGB lights with APP</p>
+                                <a href="#" type="button" class="btn btn-primary">Chi tiết</a>
+                            </div>
+                            <div class="col-5 d-flex align-items-center">
+                                <img class="img-fluid" src="img/product8.jpg" alt="pro3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-7">
+                                <h5>In-wall Switch</h5>
+                                <p class="card-text">Transform the wired single live switches to smart Zigbee switches</p>
+                                <a href="#" type="button" class="btn btn-primary">Chi tiết</a>
+                            </div>
+                            <div class="col-5 d-flex align-items-center">
+                                <img class="img-fluid" src="img/product7.jpg" alt="pro6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane container fade card-deck" id="security">
+            <div class="card-deck mt-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-7">
+                                <h5>Geekrav Zigbee Switch Series</h5>
+                                <p class="card-text">Carry leading-edge technology with sophisticated aesthetics</p>
+                                <a href="#" type="button" class="btn btn-primary">Chi tiết</a>
+                            </div>
+                            <div class="col-5 d-flex align-items-center">
+                                <img class="img-fluid" src="img/product13.jpg" alt="pro13">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-7">
+                                <h5>Touch Classic Zigbee Switch Series</h5>
+                                <p class="card-text">3ms response on tempered glass panel</p>
+                                <a href="#" type="button" class="btn btn-primary">Chi tiết</a>
+                            </div>
+                            <div class="col-5 d-flex align-items-center">
+                                <img class="img-fluid" src="img/product12.jpg" alt="pro12">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-deck mt-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-7">
+                                <h5>Aurora Zigbee Switch Series</h5>
+                                <p class="card-text">Elaborate & ultrathin glass touch panel with metal frame</p>
+                                <a href="#" type="button" class="btn btn-primary">Chi tiết</a>
+                            </div>
+                            <div class="col-5 d-flex align-items-center">
+                                <img class="img-fluid" src="img/product11.jpg" alt="pro1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-7">
+                                <h5>Platinum Zigbee Switch Series</h5>
+                                <p class="card-text">High response of capactive touch control technology</p>
+                                <a href="#" type="button" class="btn btn-primary">Chi tiết</a>
+                            </div>
+                            <div class="col-5 d-flex align-items-center">
+                                <img class="img-fluid" src="img/product10.jpg" alt="pro1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-deck mt-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-7">
+                                <h5>Zigbee RGB Relay</h5>
+                                <p class="card-text">Change the temperature and brightness of RGB lights with APP</p>
+                                <a href="#" type="button" class="btn btn-primary">Chi tiết</a>
+                            </div>
+                            <div class="col-5 d-flex align-items-center">
+                                <img class="img-fluid" src="img/product8.jpg" alt="pro3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-7">
+                                <h5>In-wall Switch</h5>
+                                <p class="card-text">Transform the wired single live switches to smart Zigbee switches</p>
+                                <a href="#" type="button" class="btn btn-primary">Chi tiết</a>
+                            </div>
+                            <div class="col-5 d-flex align-items-center">
+                                <img class="img-fluid" src="img/product7.jpg" alt="pro6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane container fade card-deck" id="rt">
+            <div class="card-deck mt-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-7">
+                                <h5>Geekrav Zigbee Switch Series</h5>
+                                <p class="card-text">Carry leading-edge technology with sophisticated aesthetics</p>
+                                <a href="#" type="button" class="btn btn-primary">Chi tiết</a>
+                            </div>
+                            <div class="col-5 d-flex align-items-center">
+                                <img class="img-fluid" src="img/product13.jpg" alt="pro13">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-7">
+                                <h5>Touch Classic Zigbee Switch Series</h5>
+                                <p class="card-text">3ms response on tempered glass panel</p>
+                                <a href="#" type="button" class="btn btn-primary">Chi tiết</a>
+                            </div>
+                            <div class="col-5 d-flex align-items-center">
+                                <img class="img-fluid" src="img/product12.jpg" alt="pro12">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-deck mt-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-7">
+                                <h5>Aurora Zigbee Switch Series</h5>
+                                <p class="card-text">Elaborate & ultrathin glass touch panel with metal frame</p>
+                                <a href="#" type="button" class="btn btn-primary">Chi tiết</a>
+                            </div>
+                            <div class="col-5 d-flex align-items-center">
+                                <img class="img-fluid" src="img/product11.jpg" alt="pro1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-7">
+                                <h5>Platinum Zigbee Switch Series</h5>
+                                <p class="card-text">High response of capactive touch control technology</p>
+                                <a href="#" type="button" class="btn btn-primary">Chi tiết</a>
+                            </div>
+                            <div class="col-5 d-flex align-items-center">
+                                <img class="img-fluid" src="img/product10.jpg" alt="pro1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-deck mt-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-7">
+                                <h5>Zigbee RGB Relay</h5>
+                                <p class="card-text">Change the temperature and brightness of RGB lights with APP</p>
+                                <a href="#" type="button" class="btn btn-primary">Chi tiết</a>
+                            </div>
+                            <div class="col-5 d-flex align-items-center">
+                                <img class="img-fluid" src="img/product8.jpg" alt="pro3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-7">
+                                <h5>In-wall Switch</h5>
+                                <p class="card-text">Transform the wired single live switches to smart Zigbee switches</p>
+                                <a href="#" type="button" class="btn btn-primary">Chi tiết</a>
+                            </div>
+                            <div class="col-5 d-flex align-items-center">
+                                <img class="img-fluid" src="img/product7.jpg" alt="pro6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane container fade card-deck" id="hvac">
+            <div class="card-deck mt-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-7">
+                                <h5>Geekrav Zigbee Switch Series</h5>
+                                <p class="card-text">Carry leading-edge technology with sophisticated aesthetics</p>
+                                <a href="#" type="button" class="btn btn-primary">Chi tiết</a>
+                            </div>
+                            <div class="col-5 d-flex align-items-center">
+                                <img class="img-fluid" src="img/product13.jpg" alt="pro13">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-7">
+                                <h5>Touch Classic Zigbee Switch Series</h5>
+                                <p class="card-text">3ms response on tempered glass panel</p>
+                                <a href="#" type="button" class="btn btn-primary">Chi tiết</a>
+                            </div>
+                            <div class="col-5 d-flex align-items-center">
+                                <img class="img-fluid" src="img/product12.jpg" alt="pro12">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-deck mt-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-7">
+                                <h5>Aurora Zigbee Switch Series</h5>
+                                <p class="card-text">Elaborate & ultrathin glass touch panel with metal frame</p>
+                                <a href="#" type="button" class="btn btn-primary">Chi tiết</a>
+                            </div>
+                            <div class="col-5 d-flex align-items-center">
+                                <img class="img-fluid" src="img/product11.jpg" alt="pro1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-7">
+                                <h5>Platinum Zigbee Switch Series</h5>
+                                <p class="card-text">High response of capactive touch control technology</p>
+                                <a href="#" type="button" class="btn btn-primary">Chi tiết</a>
+                            </div>
+                            <div class="col-5 d-flex align-items-center">
+                                <img class="img-fluid" src="img/product10.jpg" alt="pro1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-deck mt-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-7">
+                                <h5>Zigbee RGB Relay</h5>
+                                <p class="card-text">Change the temperature and brightness of RGB lights with APP</p>
+                                <a href="#" type="button" class="btn btn-primary">Chi tiết</a>
+                            </div>
+                            <div class="col-5 d-flex align-items-center">
+                                <img class="img-fluid" src="img/product8.jpg" alt="pro3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-7">
+                                <h5>In-wall Switch</h5>
+                                <p class="card-text">Transform the wired single live switches to smart Zigbee switches</p>
+                                <a href="#" type="button" class="btn btn-primary">Chi tiết</a>
+                            </div>
+                            <div class="col-5 d-flex align-items-center">
+                                <img class="img-fluid" src="img/product7.jpg" alt="pro6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane container fade card-deck" id="energy">
+            <div class="card-deck mt-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-7">
+                                <h5>Geekrav Zigbee Switch Series</h5>
+                                <p class="card-text">Carry leading-edge technology with sophisticated aesthetics</p>
+                                <a href="#" type="button" class="btn btn-primary">Chi tiết</a>
+                            </div>
+                            <div class="col-5 d-flex align-items-center">
+                                <img class="img-fluid" src="img/product13.jpg" alt="pro13">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-7">
+                                <h5>Touch Classic Zigbee Switch Series</h5>
+                                <p class="card-text">3ms response on tempered glass panel</p>
+                                <a href="#" type="button" class="btn btn-primary">Chi tiết</a>
+                            </div>
+                            <div class="col-5 d-flex align-items-center">
+                                <img class="img-fluid" src="img/product12.jpg" alt="pro12">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-deck mt-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-7">
+                                <h5>Aurora Zigbee Switch Series</h5>
+                                <p class="card-text">Elaborate & ultrathin glass touch panel with metal frame</p>
+                                <a href="#" type="button" class="btn btn-primary">Chi tiết</a>
+                            </div>
+                            <div class="col-5 d-flex align-items-center">
+                                <img class="img-fluid" src="img/product11.jpg" alt="pro1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-7">
+                                <h5>Platinum Zigbee Switch Series</h5>
+                                <p class="card-text">High response of capactive touch control technology</p>
+                                <a href="#" type="button" class="btn btn-primary">Chi tiết</a>
+                            </div>
+                            <div class="col-5 d-flex align-items-center">
+                                <img class="img-fluid" src="img/product10.jpg" alt="pro1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-deck mt-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-7">
+                                <h5>Zigbee RGB Relay</h5>
+                                <p class="card-text">Change the temperature and brightness of RGB lights with APP</p>
+                                <a href="#" type="button" class="btn btn-primary">Chi tiết</a>
+                            </div>
+                            <div class="col-5 d-flex align-items-center">
+                                <img class="img-fluid" src="img/product8.jpg" alt="pro3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-7">
+                                <h5>In-wall Switch</h5>
+                                <p class="card-text">Transform the wired single live switches to smart Zigbee switches</p>
+                                <a href="#" type="button" class="btn btn-primary">Chi tiết</a>
+                            </div>
+                            <div class="col-5 d-flex align-items-center">
+                                <img class="img-fluid" src="img/product7.jpg" alt="pro6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- content -->
+<!-- footer -->
+<footer class="container-fluid bg-light">
+    <div class="container">
+        <div class="row">
+            <!-- ft-col-1 -->
+            <div class="col-md-3 col-lg-3 col-xl-3 mt-3">
+                <img class="mb-3 logo-ft" src="img/logo.png" alt="logo">
+                <h6>CÔNG TY TNHH PHÁT TRIỂN CÔNG NGHỆ & GIẢI PHÁP THÔNG MINH HOME PLATFORM</h6>
+                <p class="mb-1">Địa chỉ: Vincom Center - 72 Lê Thánh Tôn, Bến Nghé, Quận 1, TP. HCM, Việt Nam.</p>
+                <p class="mb-1">SĐT: +84 974 486 911</p>
+                <p class="mb-1">Email: info@homeplatform.vn</p>
+            </div>
+            <!-- ft-col-1 -->
+            <!-- ft-col-2 -->
+            <div class="col-md-3 col-lg-3 col-xl-3 mt-3">
+                <h5>Chính sách và hỗ trợ</h5><hr class="mt-0">
+                <p class="mb-1">Chính sách giao hàng</p>
+                <p class="mb-1">Chính sách vận chuyển</p>
+                <p class="mb-1">Chính sách bảo hành</p>
+                <p class="mb-1">Gửi yêu cầu bảo hành</p>
+                <p class="mb-1">Thắc mắc góp ý</p>  
+            </div>
+            <!-- ft-col-2 -->
+            <!-- ft-col-3 -->
+            <div class="col-md-3 col-lg-3 col-xl-3 mt-3">
+                <h5>Truy cập nhiều nhất</h5><hr class="mt-0">
+                <p class="mb-1">Giải pháp Smarthome toàn diện</p>
+                <p class="mb-1">Gương thông minh Orvibo</p>
+                <p class="mb-1">Hướng dẫn cài đặt</p>
+                <p class="mb-1">Download bảng giá</p>
+                <p class="mb-1">Hướng dẫn nắp đặt thiết bị</p>  
+            </div>
+            <!-- ft-col-3 -->
+            <!-- ft-col-4 -->
+            <div class="col-md-3 col-lg-3 col-xl-3 mt-3">
+                <h5>Cập nhật tin tức</h5><hr class="mt-0">
+                <p>Đăng ký để nhận các thông tin và ưu đãi mới nhất từ chúng tôi.</p>
+                <!-- input -->
+                <div class="input-group mb-2">
+                    <input type="email" class="form-control" placeholder="Nhập Email ...">
+                    <div class="input-group-append">
+                        <button class="btn btn-success" type="button" data-toggle="modal" data-target="#modal-subcribe">Đăng ký</button>
+                        <div class="modal fade" id="modal-subcribe">
+                            <div class="modal-dialog modal-md">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title text-success">Đăng ký thành công</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Cảm ơn bạn đã quan tâm tới chúng tôi !!!<br>Bạn sẽ nhận được email cập nhật các sản phẩm mới và khuyến mãi đặc biệt tới email này.
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- input -->
+                <div class="icon-media">
+                    <a href="https://www.facebook.com/homeplatform4/?ref=bookmarks"><i class="fab fa-facebook text-primary bg-white rounded-circle mr-2"></i></a>
+                    <a href="https://www.youtube.com/"><i class="fab fa-youtube text-danger bg-white rounded-circle mr-2"></i></a>
+                    <a href="https://www.ebay.com/"><i class="fab fa-ebay text-success bg-white rounded-circle mr-2"></i></a>
+                    <a href="https://www.amazon.com/ref=nav_logo"><i class="fab fa-amazon text-dark bg-white rounded-circle mr-2"></i></a>
+                </div>
+            </div>
+            <!-- ft-col-4 -->
+        </div>
+        <hr>
+        <div class="d-flex justify-content-center">
+            <small><p class="text-center">Copyright ©2020 All rights reserved | This template is made with  by Home Platform.</p></small>
+        </div>
+    </div>    
+</footer>
+<!-- footer -->
+
+<script>
+    $('.popover-cart').popover({
+        html : true,
+        content: function() {
+        var elementId = $(this).attr("data-popover-content");
+        return $(elementId).html();
+        }
+    });
+</script>
+</body>
+</html>
