@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>GIẢI PHÁP</title>
+    <link rel="icon" type="image/png" href="img/icon-title.png"> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet"  type="text/css" href="style.css">
+</head>
+<body> 
+<!-- Header -->
+<header class="container-fluid bg-light">
+    <div class="container">
+        <div class="row">
+            <!-- header-left -->
+            <div class="col-md-6 col-lg-6 col-xl-6">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <small><a class="nav-link text-secondary" href="#"><i class="fas fa-envelope mr-1"></i>info@homeplatform.vn</a></small>
+                    </li>
+                    <li class="nav-item">
+                        <small><a class="nav-link text-secondary" href="#"><i class="fas fa-download mr-1"></i>Download</a></small>
+                    </li>
+                </ul>
+            </div>
+            <!-- header-left -->
+            <!-- header-right -->
+            <div class="col-md-6 col-lg-6 col-xl-6">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a href="https://www.facebook.com/homeplatform4/?ref=bookmarks" class="nav-link"><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.youtube.com/" class="nav-link text-danger"><i class="fab fa-youtube"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.ebay.com/" class="nav-link text-success"><i class="fab fa-ebay"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.amazon.com/ref=nav_logo" class="nav-link text-dark"><i class="fab fa-amazon"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown"><small>VN</small></button>
+                            <div class="dropdown-menu">
+                                <small><a class="dropdown-item" href="#">EN</a></small>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn" data-toggle="modal" data-target="#modal-login"><small><i class="fas fa-user"></i> Đăng nhập</small></button>
+                        <div class="modal fade" id="modal-login">
+                            <div class="modal-dialog modal-md">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Đăng nhập</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="/action_page.php">
+                                            <div class="form-group">
+                                                <label for="account">Tài khoản:</label>
+                                                <input type="text" class="form-control" id="email" placeholder="Nhập tài khoản" name="account">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="pw">Mật khẩu:</label>
+                                                <input type="password" class="form-control" id="pw" placeholder="Nhập mật khẩu" name="pw">
+                                            </div>
+                                            <div class="form-group form-check">
+                                                <label class="form-check-label">
+                                                    <input class="form-check-input" type="checkbox" name="remember"> Ghi nhớ email và mật khẩu
+                                                </label>
+                                            </div>
+                                        </form>
+                                        <p class="text-center">hoặc</p>
+                                        <a href="#" type="button" class="btn btn-primary btn-block">Đăng nhập với Facebook</a>
+                                        <a href="#" type="button" class="btn btn-danger btn-block">Đăng nhập với Gmail</a>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#">Quên mật khẩu</a>
+                                        <a href="register.html" type="button" class="btn btn-primary">Đăng ký</a>
+                                        <button type="submit" class="btn btn-primary">Đăng nhập</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- header-right -->
+        </div>
+    </div>
+</header>
+<!-- Header -->
+<!-- menu -->
+<div class="bg-white sticky-top">
+    <!-- menu-top -->
+    <div class="container">
+        <div class="row">
+            <!-- logo -->
+            <div class="col-md-3 col-lg-3 col-xl-3 d-flex align-items-center">
+                <a href="index.html"><img class="img-fluid" src="img/logo.png" alt="logo"></a>
+            </div>
+            <!-- logo -->
+            <!-- menu-hoz -->
+            <div class="col-md-6 col-lg-6 col-xl-6">
+                <ul class="nav justify-content-center menu-large">
+                    <li class="nav-item">
+                        <a href="products.html" class="nav-link text-dark font-weight-bold">SẢN PHẨM</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="solutions.html" class="nav-link text-dark font-weight-bold">GIẢI PHÁP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="news.html" class="nav-link text-dark font-weight-bold">TIN TỨC</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link text-dark font-weight-bold">LIÊN HỆ</a>
+                    </li>
+                </ul>
+                <ul class="nav menu-small">
+                    <li class="nav-item flex-fill text-center">
+                        <a href="products.html" class="nav-link text-dark"><i class="fab fa-buromobelexperte"></i></a>
+                    </li>
+                    <li class="nav-item flex-fill text-center">
+                        <a href="solutions.html " class="nav-link text-dark"><i class="fas fa-sitemap"></i></a>
+                    </li>
+                    <li class="nav-item flex-fill text-center">
+                        <a href="news.html" class="nav-link text-dark"><i class="fas fa-stream"></i></a>
+                    </li>
+                    <li class="nav-item flex-fill text-center">
+                        <a href="contact.html" class="nav-link text-dark"><i class="far fa-address-card"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- menu-hoz -->
+            <!-- cart -->
+            <div class="col-md-3 col-lg-3 col-xl-3">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link"><i class="fas fa-heart"></i><span class="badge badge-pill badge-success">4</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="popover-cart btn" data-toggle="popover" data-placement="bottom" title="Giỏ hàng" data-trigger="focus" data-html="true" data-popover-content="#button-cart">
+                            <i class="fas fa-shopping-cart"></i><span class="badge badge-pill badge-success">3</span>
+                        </button>
+                        <div id="button-cart" style="display: none;">
+                            <div class="row d-flex align-items-center">
+                                <div class="col"><img class="img-fluid" src="img/product1.jpg"></div>
+                                <div class="col"><p>hub</p></div>
+                                <div class="col"><p>SL:1</p></div>
+                            </div><hr>
+                            <div class="row d-flex align-items-center">
+                                <div class="col"><img class="img-fluid" src="img/product2.jpg"></div>
+                                <div class="col"><p>Allon AIO</p></div>
+                                <div class="col"><p>SL:1</p></div>
+                            </div><hr>
+                            <div class="row d-flex align-items-center">
+                                <div class="col"><img class="img-fluid" src="img/product3.jpg"></div>
+                                <div class="col"><p>Mirror</p></div>
+                                <div class="col"><p>SL:1</p></div>
+                            </div>
+                            <a href="cart.html" class="btn btn-primary btn-block mt-3" role="button">Kiểm tra</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"><i class="fas fa-plus-square"></i> :750 $</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- cart -->
+        </div>
+    </div>
+    <!-- menu-top -->
+    <!-- menu-bottom -->
+    <div class="container">
+        <div class="row">
+            <!-- navbar -->
+            <div class="col-md-3 col-lg-3 col-xl-3 mb-1">
+                <nav class="navbar navbar-light">
+                    <a class="navbar-brand">Menu</a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapse-menu">
+                        <span class="navbar-toggler-icon navbar-toggler-icon-custom"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapse-menu">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link">Bộ điều khiển trung tâm</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">Chiếu sáng thông minh</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">Kiểm soát</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">Rèm thông minh</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">Hệ thống HVAC</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">Ổ cắm thông minh</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">Giải trí</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <!-- navbar -->
+            <!-- search -->
+            <div class="col-md-6 col-lg-6 col-xl-6 mb-1 d-flex align-items-center">
+                <div class="input-group">
+                    <input type="search" class="form-control" placeholder="Tìm kiếm ...">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="submit"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+            </div>
+            <!-- search -->
+            <!-- sos -->
+            <div class="col-md-3 col-lg-3 col-xl-3 mb-1 align-items-center justify-content-center sos">
+                <i class="fas fa-phone text-white bg-success rounded-circle mr-2 icon-sos"></i>
+                <h6 class="mb-0">+84 974 486 911</h6>
+                
+            </div>
+            <!-- sos -->
+        </div>
+    </div>
+    <!-- menu-bottom -->
+</div>
+<!-- menu -->
+<!-- content -->
+<div class="container">
+    <img class="img-fluid" src="img/solution_bg11-abd5aee086.jpg" alt="bg">
+    <img class="mx-auto d-block mt-3" src="img/solution_img1-b305c4fbfa.jpg" alt="homemate">
+    <h4 class="text-center">SMART HOME SOLUTION</h4>
+    <p class="text-center">Improve your smart life experience, provide complete systems including audio visual, lighting control, home automation and smart security, etc ...</p>
+    <div class="row">
+        <div class="col-md-6 col-lg-6 col-xl-6"><img class="img-fluid" src="img/so_left1-660b28d697.jpg"></div>
+        <div class="col-md-6 col-lg-6 col-xl-6">
+            <h4>INTRODUCTION</h4>
+            <p>In order to enhance the smart life experience of users, ORVIBO provides De-house smart home solution.</p>
+            <p>This solution includes 7 smart systems: Smart lighting, smart security, central condition, appliances control, access control, smart curtain and energy management.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-lg-6 col-xl-6">
+            <h4>FEATURES</h4>
+            <ul>
+                <li>Simple Installation. No wiring when use the ZigBee wireless technology.</li>
+                <li>Convenient. More user-friendly design and interaction.</li>
+                <li>Secure Cloud. Reliable smart home cloud platform.</li>
+                <li>More Compatible. Support to link with smart devices of different brands.</li>
+                <li>Low Power Consumption. ZigBee communication is stable and economic</li>
+            </ul>
+        </div>
+        <div class="col-md-6 col-lg-6 col-xl-6"><img class="img-fluid" src="img/8630vjs2745vfd4.PNG"></div>
+    </div>
+    <img class="mx-auto d-block mt-3" src="img/solution_img2-fc76b9a099.jpg" alt="office">
+    <h4 class="text-center">SMART OFFICE SOLUTION</h4>
+    <p class="text-center">Smart lighting and energy system for office. More energy-saving office solution and more efficient office management, save 30% energy cost.</p>
+    <div class="row">
+        <div class="col-md-6 col-lg-6 col-xl-6"><img class="img-fluid" src="img/so_left3-68858057d8.jpg"></div>
+        <div class="col-md-6 col-lg-6 col-xl-6">
+            <h4>INTRODUCTION</h4>
+            <p>Green Office solution is designed for joint office, small and medium enterprises. It is a smart lighting and energy management system.</p>
+            <p>With the current protection and electricity usage monitoring function, it provides users the more convenient, comfortable and secure smart life.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-lg-6 col-xl-6">
+            <h4>FEATURES</h4>
+            <ul>
+                <li>24-hour remote control and management.</li>
+                <li>Monitor the energy consumption by departments, districts and dates.</li>
+                <li>Automatically adjust the lighting and central A/C as per the environment.</li>
+                <li>Data recording and analysis by the cloud server, provide targeted energy-saving advice for companies.</li>
+                <li>User-friendly management backstage, raise the efficiency.</li>
+            </ul>
+        </div>
+        <div class="col-md-6 col-lg-6 col-xl-6"><img class="img-fluid" src="img/so_left4-1f94fb6e6a.jpg"></div>
+    </div>
+    <img class="mx-auto d-block mt-3" src="img/solution_img3-99b8f8a9a7.jpg" alt="hotel">
+    <h4 class="text-center">SMART HOTEL SOLUTION</h4>
+    <p class="text-center">Integrate systems including Lighting, sun-shading and curtains, audio visual, air conditioning, etc.. Provide efficient, user-friendly and comfortable hotel experience.</p>
+    <div class="row">
+        <div class="col-md-6 col-lg-6 col-xl-6"><img class="img-fluid" src="img/so_left5-5de15ae397.jpg"></div>
+        <div class="col-md-6 col-lg-6 col-xl-6">
+            <h4>INTRODUCTION</h4>
+            <p>WeHotel is an innovative and smart management system for hotel, which is developed based on the latest IOT and mobile Internet technology.</p>
+            <p>WeHotel system can monitor and control devices locally and remotely, optimize operation procedure and save energy, so that the total cost on both management and operation will be reduced.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-lg-6 col-xl-6">
+            <h4>FEATURES</h4>
+            <ul>
+                <li>Monitoring and controlling devices remotely.</li>
+                <li>Easy and simple check-in via Wechat or User App.</li>
+                <li>Comprehensive room's status information.</li>
+                <li>Various smart scenes: sleeping mode, welcome mode, all lights off mode, check-out mode etc.</li>
+                <li>Wireless room control system, easy to install, modify and maintain.</li>
+            </ul>
+        </div>
+        <div class="col-md-6 col-lg-6 col-xl-6"><img class="img-fluid" src="img/so_left6-cc6171a2cc.jpg"></div>
+    </div>
+</div>
+<!-- content -->
+<!-- footer -->
+<footer class="container-fluid bg-light">
+    <div class="container">
+        <div class="row">
+            <!-- ft-col-1 -->
+            <div class="col-md-3 col-lg-3 col-xl-3 mt-3">
+                <img class="mb-3 logo-ft" src="img/logo.png" alt="logo">
+                <h6>CÔNG TY TNHH PHÁT TRIỂN CÔNG NGHỆ & GIẢI PHÁP THÔNG MINH HOME PLATFORM</h6>
+                <p class="mb-1">Địa chỉ: Vincom Center - 72 Lê Thánh Tôn, Bến Nghé, Quận 1, TP. HCM, Việt Nam.</p>
+                <p class="mb-1">SĐT: +84 974 486 911</p>
+                <p class="mb-1">Email: info@homeplatform.vn</p>
+            </div>
+            <!-- ft-col-1 -->
+            <!-- ft-col-2 -->
+            <div class="col-md-3 col-lg-3 col-xl-3 mt-3">
+                <h5>Chính sách và hỗ trợ</h5><hr class="mt-0">
+                <p class="mb-1">Chính sách giao hàng</p>
+                <p class="mb-1">Chính sách vận chuyển</p>
+                <p class="mb-1">Chính sách bảo hành</p>
+                <p class="mb-1">Gửi yêu cầu bảo hành</p>
+                <p class="mb-1">Thắc mắc góp ý</p>  
+            </div>
+            <!-- ft-col-2 -->
+            <!-- ft-col-3 -->
+            <div class="col-md-3 col-lg-3 col-xl-3 mt-3">
+                <h5>Truy cập nhiều nhất</h5><hr class="mt-0">
+                <p class="mb-1">Giải pháp Smarthome toàn diện</p>
+                <p class="mb-1">Gương thông minh Orvibo</p>
+                <p class="mb-1">Hướng dẫn cài đặt</p>
+                <p class="mb-1">Download bảng giá</p>
+                <p class="mb-1">Hướng dẫn nắp đặt thiết bị</p>  
+            </div>
+            <!-- ft-col-3 -->
+            <!-- ft-col-4 -->
+            <div class="col-md-3 col-lg-3 col-xl-3 mt-3">
+                <h5>Cập nhật tin tức</h5><hr class="mt-0">
+                <p>Đăng ký để nhận các thông tin và ưu đãi mới nhất từ chúng tôi.</p>
+                <!-- input -->
+                <div class="input-group mb-2">
+                    <input type="email" class="form-control" placeholder="Nhập Email ...">
+                    <div class="input-group-append">
+                        <button class="btn btn-success" type="button" data-toggle="modal" data-target="#modal-subcribe">Đăng ký</button>
+                        <div class="modal fade" id="modal-subcribe">
+                            <div class="modal-dialog modal-md">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title text-success">Đăng ký thành công</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Cảm ơn bạn đã quan tâm tới chúng tôi !!!<br>Bạn sẽ nhận được email cập nhật các sản phẩm mới và khuyến mãi đặc biệt tới email này.
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- input -->
+                <div class="icon-media">
+                    <a href="https://www.facebook.com/homeplatform4/?ref=bookmarks"><i class="fab fa-facebook text-primary bg-white rounded-circle mr-2"></i></a>
+                    <a href="https://www.youtube.com/"><i class="fab fa-youtube text-danger bg-white rounded-circle mr-2"></i></a>
+                    <a href="https://www.ebay.com/"><i class="fab fa-ebay text-success bg-white rounded-circle mr-2"></i></a>
+                    <a href="https://www.amazon.com/ref=nav_logo"><i class="fab fa-amazon text-dark bg-white rounded-circle mr-2"></i></a>
+                </div>
+            </div>
+            <!-- ft-col-4 -->
+        </div>
+        <hr>
+        <div class="d-flex justify-content-center">
+            <small><p class="text-center">Copyright ©2020 All rights reserved | This template is made with  by Home Platform.</p></small>
+        </div>
+    </div>    
+</footer>
+<!-- footer -->
+
+<script>
+    $('.popover-cart').popover({
+        html : true,
+        content: function() {
+        var elementId = $(this).attr("data-popover-content");
+        return $(elementId).html();
+        }
+    });
+</script>
+</body>
+</html>
