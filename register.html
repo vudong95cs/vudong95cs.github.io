@@ -238,7 +238,97 @@
 </div>
 <!-- menu -->
 <!-- content -->
-
+<div class="container">
+    <h4 class="text-center">Đăng ký thành viên cùng HOME PLATFORM</h4>
+    <p class="text-center">Cùng đăng ký để tiến hành mua hàng và hưởng những ưu đãi lớn nhất từ chúng tôi.</p>
+    <div class="row">
+        <div class="col-md-6 col-lg-6 col-xl-6 text-right"><a href="#" type="button" class="btn btn-primary">Đăng ký với Facebook</a></div>
+        <div class="col-md-6 col-lg-6 col-xl-6 text-left"><a href="#" type="button" class="btn btn-danger">Đăng ký với Gmail</a></div>
+    </div>
+    <p class="text-center mt-2">hoặc điền đầy đủ vào form sau:</p>
+    <div class="row">
+        <div class="col-md-6 col-lg-6 col-xl-6">
+            <form action="/action_page.php">
+                <div class="form-group">
+                    <label for="name">Họ và tên:</label>
+                    <input type="text" class="form-control" placeholder="VD: VU VAN DONG" id="name">
+                </div>
+                <div class="form-group">
+                    <label for="birthday">Ngày sinh:</label>
+                    <input type="date" class="form-control" id="birthday">
+                </div>
+                <div class="form-group">
+                    <label for="gender">Giới tính:</label>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="optradio">Nam
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="optradio">Nữ
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="location">Chỗ ở hiện tại:</label>
+                    <input type="text" class="form-control" placeholder="VD: số 51 Trần Văn Dư, P.13, Q. Tân Bình, HCM" id="location">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Số điện thoại:</label>
+                    <input type="tel" class="form-control" placeholder="VD: 0974 486 911" id="phone">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" placeholder="VD: abc@xyz.def" id="mail">
+                </div>
+            </form>
+        </div>
+        <div class="col-md-6 col-lg-6 col-xl-6">
+            <form action="/action_page.php">
+                <div class="form-group">
+                    <label for="account">Tài khoản:</label>
+                    <input type="text" class="form-control" placeholder="Nhập tài khoản" id="account">
+                </div>
+                <div class="form-group">
+                    <label for="password">Mật khẩu:</label>
+                    <input type="password" class="form-control" placeholder="Nhập mật khẩu" id="password">
+                </div>
+                <div class="form-group">
+                    <label for="location">Nhập lại mật khẩu:</label>
+                    <input type="password" class="form-control" placeholder="Nhập lại mật khẩu" id="password">
+                </div>  
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optradio">Cam kết các thông tin trên là chính xác.</a>
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optradio1">Đồng ý với <a href="#">điều khoản </a>của chúng tôi.
+                    </label>
+                </div>
+                <a href="#" type="button" class="btn btn-primary btn-block mt-3" data-toggle="modal" data-target="#regiter">Đăng ký</a>
+                <div class="modal" id="regiter">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Thông báo</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body text-success">
+                                Đăng ký thành công
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Đóng</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </form>
+        </div>
+    </div>
+</div>
 <!-- content -->
 <!-- footer -->
 <footer class="container-fluid bg-light">
